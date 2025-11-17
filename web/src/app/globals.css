@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --brand-ink: #0b1120;
+  --brand-emerald: #2dd4bf;
+  --brand-cyan: #22d3ee;
+  --brand-blue: #1d4ed8;
+  --brand-slate: #94a3b8;
+}
+
+@theme inline {
+  --color-background: var(--brand-ink);
+  --color-foreground: #f8fafc;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  min-height: 100vh;
+  background-color: var(--brand-ink);
+  color: var(--color-foreground);
+}
+
+::selection {
+  background-color: rgba(34, 211, 238, 0.35);
+  color: #0b1120;
+}
